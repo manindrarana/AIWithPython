@@ -1,0 +1,26 @@
+	Introduction to AI Search Algorithm:
+
+In ai search algorithms can be classified into two either in 
+
+1. Uniformed Search Algorithm : Depth First Search, Breadth First Search , Uniform cost Search 
+
+2. Informed Search Algorithm : Greedy Best-First Search , A* Search , Graph Search
+
+Firstly, search problem consists of the agent that is given as the initial state and the goal state and returns the solution to get from the former to the latter.
+
+Taking an example of the google navigation or the game of maze, chess or puzzle.
+
+So first and foremost the basics of Search problems starting with the agent and the components of the agent : 
+
+Agent : it's the system/entity where it performs problem solving task by the search through a problem space to find the solutions 
+
+State : just a configuration of the agent and it's environment 
+
+Initial State : it's the state where the agent begins with where in navigator app maybe the initial state be the current location of the user
+
+Actions : actions are the choices that can made in the state. It returns the set of actions that can be executed in the state (s) Action(s) takes one input state. Examples like in a puzzle either moving the box in left, right , up or down
+
+Transition Model : In ai we need 	some encoding of the state , to relate the actions and state to another we use the transition model . So its's basically  we get after we perform some available action in some other state formally also can be called as function. 
+
+Function called as Result(s , a) takes the two inputs as state and action.
+
