@@ -19,6 +19,22 @@ class QueueFrontier():
     
     def check_empty(self):
         if self.empty():
+            return len(self.frontier) == 0
+    
+    def remove(self):
+        if self.check_empty():
             return Exception("frontier is empty")
+        else:
+            return self.frontier.pop(0)
+        
 
+class Maze():
+    def __init__(self,filename):
+        self.filename = filename
+
+        with open (filename) as f: 
+            content = f.read()
+        
+        if content.count('A') !=1: 
+            raise Exception ("should atleaast have a starting point")
 
